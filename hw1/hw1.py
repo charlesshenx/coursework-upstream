@@ -18,6 +18,7 @@ from tree import TreeNode
 
 
 def count_words(list_of_strings: list[str], starts_with: str) -> dict[str, int]:
+
     """
     Find the words that start with a given substring and count the number of
     times each word appears.
@@ -29,7 +30,15 @@ def count_words(list_of_strings: list[str], starts_with: str) -> dict[str, int]:
     Returns (dict): the words and counts of each word that starts with the given
     """
     raise NotImplementedError("todo: count_words")
-
+   length = len(starts_with)
+   dictionary = {}
+   for word in list_of_strings:
+      if word[0:length] == starts_with:
+         if word in dictionary:
+            dictionary[word] += 1
+         else:
+            dictionary[word] = 1
+   return dictionary
 
 class Board:
     """
