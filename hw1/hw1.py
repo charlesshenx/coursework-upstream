@@ -28,7 +28,7 @@ def count_words(list_of_strings: list[str], starts_with: str) -> dict[str, int]:
 
     Returns (dict): the words and counts of each word that starts with the given
     """
-    raise NotImplementedError("todo: count_words")
+
 
 
 class Board:
